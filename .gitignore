@@ -1,0 +1,7 @@
+*.pyc
+*.db
+settings.py
+settings.production.py
+fabfile.py
+.DS_Store
+build
