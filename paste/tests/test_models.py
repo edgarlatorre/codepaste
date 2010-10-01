@@ -18,6 +18,11 @@ class CodeTest(TestCase) :
 		code = Code(title='title')
 		self.assertTrue(str(code) == code.title)
 		
+	def test_should_have_a_slug(self):
+		code = Code(title='test slug', language='python', code='code')
+		code.save()
+		self.assertTrue(code.slug == 'test-slug')
+		
 	def code_is_valid(self, code) :
 		is_valid = True
 		try :
