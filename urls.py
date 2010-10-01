@@ -17,4 +17,6 @@ urlpatterns = patterns('',
     # (r'^admin/', include(admin.site.urls)),
 	url(r'^media/(.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 	url(r'^$', 'codepaste.paste.views.index', name='index'),
+	url(r'^code/save$', 'codepaste.paste.views.save', name='save'),
+	url(r'^code/(?P<slug>[\w_-]+)/$', 'codepaste.paste.views.show', name='show'),
 )

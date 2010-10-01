@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-		<form action='/paste/' method='POST'>
+		<form action='/code/save' method='POST'>
 			<p>
 				<label for='title'>Título</label><br>
 				<input name='title' id='title' type='text' required />
@@ -11,7 +11,11 @@
             </p>
 			<p>
 				<label for='codigo'>Código</label><br>
-				<textarea id='code' rows="22" cols="60" name='code'></textarea>
+				<textarea id='code' rows="22" cols="120" name='code'></textarea>
+            </p>
+			<p>
+				<label for='description'>Obs</label><br>
+				<textarea id='description' rows="10" cols="60" name='slug'></textarea>
             </p>
 			<p><input type='submit' value='Salvar' /></p>
 		</form>

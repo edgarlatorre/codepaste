@@ -5,3 +5,4 @@ settings.production.py
 fabfile.py
 .DS_Store
 build
+pygments

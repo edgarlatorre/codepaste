@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<label for='title'>Título: </label> {{ code.title}} <br>
+<label for='language'>Linguagem: </label>{{ code.language }}<br><br>
+<label for='code'>Código: </label>{{ code.code|safe }}
+{% endblock %}

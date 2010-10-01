@@ -1,5 +1,6 @@
 from django.test import TestCase
 from django.test import Client
+from django.core.urlresolvers import reverse
 
 class CodeViewTest(TestCase):
 	client = Client()
