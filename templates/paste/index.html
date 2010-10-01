@@ -1,7 +1,18 @@
-<html>
-	<head>
-	</head>
-	<body>
-		Ok
-	</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+		<form action='/paste/' method='POST'>
+			<p>
+				<label for='title'>Título</label><br>
+				<input name='title' id='title' type='text' required />
+            </p>
+			<p>
+				<label for='language'>Linguagem</label><br>
+				<input name='language' id='language' type='text' required />
+            </p>
+			<p>
+				<label for='codigo'>Código</label><br>
+				<textarea id='code' rows="22" cols="60" name='code'></textarea>
+            </p>
+			<p><input type='submit' value='Salvar' /></p>
+		</form>
+{% endblock %}

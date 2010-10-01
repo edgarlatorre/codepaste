@@ -1,0 +1,58 @@
+html {
+  color: #000;
+  background: #FFF; 
+  font-size:13px;
+  font-family:Helvetica;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+}
+
+fieldset, img {
+  border: 0; 
+}
+
+li {
+  list-style: none; 
+}
+
+caption, th {
+  text-align: left; 
+}
+
+blockquote, ul, ol, dl { margin: 1em;  }
+
+ol, ul, dl { margin-left: 2em; }
+
+ol li { list-style: decimal outside; }
+
+ul li { list-style: disc outside; }
+
+dl dd {  margin-left: 1em; }
+
+th, td {
+  border: 1px solid #CFCFCF;
+  padding: .5em; 
+}
+
+th {
+  font-weight: bold;
+  text-align: center; 
+}
+
+caption {
+  margin-bottom: .5em;
+  text-align: center; 
+}
+
+p, fieldset, table, pre {
+  margin-bottom: 1em; 
+}
+
+body {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
+}
